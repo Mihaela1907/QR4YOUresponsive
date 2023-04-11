@@ -1,0 +1,145 @@
+#main {
+  background: url("./../img/background2.png");
+  background-color: #bf3d64;
+}
+
+.products-container {
+  gap: 31px;
+  padding: 40px 174px 0px 116px;
+}
+
+.product-container {
+  width: 390px;
+  height: 390px;
+  background-color: #f9f0f5;
+  cursor: pointer;
+  box-shadow: 0 0 40px #52012c;
+  transition: ease-in 0.5s;
+}
+
+.product-container:hover {
+  transform: scale(1.5);
+  transform-origin: center;
+}
+
+.product-image-container {
+  transition: ease-in 0.5s;
+}
+
+.product-container:hover .product-image-container {
+  transform: scale(1.3);
+  transform-origin: center;
+}
+
+.product-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px auto;
+  border-radius: 50%;
+  max-width: 200px;
+  max-height: 200px;
+  overflow: hidden;
+}
+
+.product-image {
+  margin: 0 auto;
+  width: 440px;
+  height: 440px;
+}
+
+.product-info-container {
+  align-items: center;
+  padding: 0px 30px;
+}
+
+.product-info {
+  margin: 0px;
+  font-family: "Raleway";
+  font-size: 13px;
+  line-height: 20px;
+  letter-spacing: 0.65px;
+  color: #696969;
+  text-transform: uppercase;
+}
+
+a.request {
+  height: 35px;
+}
+
+.narrow .products-container {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+@media only screen and (max-width: 1920px) {
+  .narrow .right-edge-text {
+    right: -80px;
+  }
+}
+
+@media only screen and (max-width: 1760px) {
+  .narrow .right-edge-text {
+    right: -160px;
+  }
+}
+
+@media only screen and (max-width: 1615px) {
+  .narrow .products-container {
+    padding-right: 60px;
+  }
+}
+
+@media only screen and (max-width: 1700px) {
+  .right-edge-text {
+    right: -80px;
+  }
+
+  .left-edge-text {
+    left: -70px !important;
+  }
+}
+
+@media only screen and (max-width: 1600px) {
+  .right-edge-text {
+    right: -160px;
+  }
+
+  .left-edge-text {
+    left: -150px !important;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .narrow .right-edge-text {
+    display: none
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .narrow .product-container {
+    width: 300px;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .products-container {
+    padding-left: 74px;
+    padding-right: 64px;
+  }
+
+  .product-container {
+    min-width: 320px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .products-container {
+    padding-left: 5px;
+    padding-right: 40px;
+  }
+
+  .right-edge-text, .left-edge-text {
+    display: none;
+  }
+}

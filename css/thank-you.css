@@ -1,0 +1,39 @@
+#main {
+  background: url("./../img/background2.png");
+}
+
+#sidebar {
+  height: 100vh;
+}
+
+.thank-you-container {
+  padding-top: 355px;
+}
+
+.thank-you-text {
+  margin: 0px auto;
+  margin-bottom: 60px;
+  max-width: 1005px;
+  padding: 0px 20px;
+  font-size: 40px;
+  line-height: 60px;
+  font-family: "Raleway";
+  letter-spacing: 1.6px;
+  color: #ffffff;
+  transition: 0.5s;
+}
+
+.mini-logo {
+  width: 200px;
+  height: 88px;
+}
+
+.narrow .thank-you-text {
+  max-width: 773px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .thank-you-container {
+    padding-left: 60px;
+  }
+}

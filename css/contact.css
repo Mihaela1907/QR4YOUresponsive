@@ -1,0 +1,151 @@
+#main {
+  background: url("./../img/background2.png");
+}
+
+.contact-container {
+  padding: 36.87px 155px 0px 114px;
+}
+
+.contact-container label {
+  font-family: "Raleway";
+  font-size: 35px;
+  line-height: 41px;
+  letter-spacing: 0.7px;
+  color: #ffffff;
+}
+
+.contact-container .form-control {
+  border: 2px solid #ffffff;
+  border-radius: 19px;
+  opacity: 0.78;
+  font-family: "Raleway";
+  font-size: 25px;
+  letter-spacing: 0.5px;
+  color: #694658;
+}
+
+.contact-container .form-control.dark {
+  background-color: #bf3d64;
+  color: #ffffff;
+}
+
+.contact-container input.form-control,
+.contact-container select.form-control {
+  height: 75px;
+  width: 100% !important;
+}
+
+a.primary {
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0px 86px;
+  font-size: 27px;
+}
+
+.narrow .form-group {
+  width: 100%;
+}
+
+.contact-row.small-row:not(.row) {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.contact-col.small:not(.col) {
+  width: 49%;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.form-control:focus {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  outline: none;
+}
+
+@media only screen and (max-width: 1760px) {
+  .right-edge-text {
+    right: -80px;
+  }
+}
+
+@media only screen and (max-width: 1600px) {
+  .right-edge-text {
+    right: -160px;
+  }
+}
+
+@media only screen and (max-width: 1360px) {
+  .narrow .contact-container label {
+    font-size: 28px;
+  }
+
+  .narrow .contact-container .form-control  {
+    height: 55px !important;
+    font-size: 18px;
+  }
+
+  .narrow .contact-container {
+    padding-left: 44px;
+    padding-right: 70px;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  .contact-container label {
+    font-size: 28px;
+  }
+
+  .contact-container .form-control  {
+    height: 55px !important;
+    font-size: 18px;
+  }
+
+  .narrow .contact-col.small:not(.col) {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .contact-container label {
+    font-size: 18px;
+  }
+
+  .contact-container {
+    padding-left: 94px;
+    padding-right: 40px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .contact-container label {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .contact-container {
+    padding-left: 55px;
+    padding-right: 0px;
+  }
+
+  .right-edge-text {
+    display: none;
+  }
+}

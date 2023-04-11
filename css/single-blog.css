@@ -1,0 +1,131 @@
+#main {
+  background: url("./../img/background2.png");
+}
+
+.single-blog-container {
+  padding: 36.87px 166px 0px 166px;
+}
+
+.single-blog-container .single-blog {
+  background-color: #ffffff;
+}
+
+.single-blog-container .single-blog img {
+  max-width: 554px;
+  margin-left: -40px;
+  margin-top: -15px;
+}
+
+.single-blog-title {
+  margin-top: 146px;
+  margin-left: 26px;
+  max-width: 466px;
+  font-family: "Raleway";
+  font-size: 66px;
+  line-height: 100px;
+  letter-spacing: 1.65px;
+  color: #ab2069;
+}
+
+.single-blog-text {
+  padding: 24px 40px;
+  font-family: "Raleway";
+  font-size: 20px;
+  line-height: 45px;
+  letter-spacing: 0.2px;
+}
+
+.narrow .single-blog-container {
+  padding-left: 64px;
+}
+
+.narrow .single-blog {
+  box-shadow: 0 0 70px #52012c;
+}
+
+.narrow .single-blog-title {
+  margin-top: 50px;
+  margin-left: 77px;
+}
+
+@media only screen and (max-width: 1860px) {
+  .left-edge-text {
+    left: -10px;
+  }
+}
+
+@media only screen and (max-width: 1760px) {
+  .right-edge-text {
+    right: -80px;
+  }
+
+  .left-edge-text {
+    left: -70px;
+  }
+}
+
+@media only screen and (max-width: 1760px) {
+  .left-edge-text {
+    left: -120px;
+  }
+}
+
+@media only screen and (max-width: 1600px) {
+  .right-edge-text {
+    right: -160px;
+  }
+}
+
+@media only screen and (max-width: 1366px) {
+  .single-blog-title {
+    font-size: 46px;
+    line-height: 70px;
+    padding-right: 20px;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  .single-blog-container .single-blog img {
+    max-width: 400px;
+  }
+
+  .single-blog-title {
+    margin-top: 100px;
+    font-size: 36px;
+    line-height: 50px;
+  }
+
+  .narrow .single-blog-container {
+    padding-left: 20px !important;
+    padding-right: 90px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .single-blog-title {
+    margin-top: 90px;
+    font-size: 28px;
+    line-height: 36px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .single-blog-container .single-blog img {
+    max-width: 300px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .single-blog-container {
+    padding-right: 76px;
+    padding-left: 126px;
+  }
+
+  .single-blog-container .single-blog img {
+    display: none;
+  }
+
+  .single-blog-title {
+    margin-left: 40px !important;
+  }
+}
