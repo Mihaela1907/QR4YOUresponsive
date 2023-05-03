@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Responsive Meta Tag -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>QR4YOU</title>
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon//favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon//favicon-16x16.png"
+    />
+    <link rel="manifest" href="favicon//site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="favicon//safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Adding Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+      crossorigin="anonymous"
+    />
+    <!-- Adding Bootstrap CDN and external CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+      integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+      crossorigin="anonymous"
+    />
+    <!-- Adding CSS -->
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+    <link rel="stylesheet" type="text/css" href="./css/products.css" />
+    <link rel="stylesheet" type="text/css" href="./css/sidebar.css" />
+  </head>
+  <body>
+    <!-- Main Section -->
+    <section id="main">
+      <div class="left-edge-text wide content-to-hide">KEEP THE MEMORIES.</div>
+      <div class="right-edge-text bold">SHOP</div>
+
+      <div class="container header-container">
+        <!-- Navbar Here -->
+        <nav class="navbar navbar-expand-md navbar-dark bg-transparent pt-5">
+          <div class="d-flex">
+            <img
+              id="sidebar-toggle-button"
+              src="./img/logo1.png"
+              alt="..."
+              onclick="toggleSidebar()"
+            />
+
+            <a class="header-language">HR</a>
+            <a class="header-language">ENG</a>
+          </div>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a href="https://www.facebook.com/souvieshop">
+                  <img src="./img/facebook-logo.png" alt="..." />
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="https://www.instagram.com/souvie_shop/">
+                  <img src="./img/instagram-logo.png" alt="..." />
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  href="https://www.youtube.com/channel/UCMSjc8v1KjjdqxfnIeJ801A"
+                >
+                  <img src="./img/youtube-logo.png" alt="..." />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+
+      <!-- Page content -->
+      <div id="magnets-shop" class="container d-flex">
+        <div id="sidebar" class="hidden">
+          <ul>
+            <li><a href="./index.html">HOME</a></li>
+            <li><a href="./about-us.html">ABOUT&nbsp;US</a></li>
+            <li><a href="./blog.html">BLOG</a></li>
+            <li>
+              <a class="toggle-sub-navigation-button" onclick="toggleSubNav()"
+                >SHOP</a
+              >
+              <ul id="sub-navigation" class="sub-navigation hidden">
+                <li>
+                  <a href="./magnets-shop.html">MAGNETS</a>
+                </li>
+                <li>
+                  <a href="./stickers-shop.html">STICKERS</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+        <div class="page-content-container">
+          <div
+            id="magnets-list"
+            class="products-container d-flex justify-content-center flex-wrap"
+          ></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bootstrap's Javascript -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+      integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+      integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="./js/magnets.js" defer></script>
+    <script src="./js/index.js" defer></script>
+  </body>
+</html>

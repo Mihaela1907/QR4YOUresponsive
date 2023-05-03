@@ -1,0 +1,150 @@
+#main {
+  background: url("./../img/background2.png");
+}
+
+.about-us-content {
+  padding-top: 70.87px;
+  color: #ffffff;
+}
+
+.img-container {
+  padding: 0px;
+  max-height: 750px;
+}
+
+.img-container .about-us-img {
+  margin-left: -160px;
+  max-width: 930px;
+  box-shadow: 0 0 60px #e789a5;
+}
+
+.about-us-text-container {
+  max-width: 674px;
+}
+
+.about-us-title {
+  margin-left: -595px;
+  font-size: 70px;
+  line-height: 82px;
+  font-family: "Raleway";
+  font-weight: 700;
+  letter-spacing: 0px;
+}
+
+.about-us-text {
+  margin-top: 47px;
+  margin-bottom: 40px !important;
+  font-size: 30px;
+  line-height: 50px;
+  font-family: "Raleway";
+  letter-spacing: 0.6px;
+}
+
+.narrow .about-us-content {
+  padding-left: 147px;
+}
+
+.narrow .about-us-title {
+  margin-left: 0px;
+  padding-left: 50px;
+  text-align: left;
+}
+
+.narrow .text-container {
+  margin-left: 0px;
+}
+
+@media only screen and (max-width: 1760px) {
+  .right-edge-text {
+    right: -80px;
+  }
+}
+
+@media only screen and (max-width: 1600px) {
+  .right-edge-text {
+    right: -180px;
+  }
+
+  .narrow .about-us-content {
+    padding-left: 47px;
+  }
+}
+
+@media only screen and (max-width: 1366px) {
+  .about-us-img {
+    max-width: 780px !important;
+  }
+
+  .about-us-text {
+    font-size: 22px;
+  }
+
+  .narrow .about-us-content {
+    padding-right: 47px;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  .about-us-title {
+    font-size: 50px;
+  }
+
+  .about-us-text {
+    margin-bottom: 20px !important;
+    font-size: 20px;
+    line-height: 40px;
+  }
+
+  a.primary {
+    font-size: 20px;
+    line-height: 51px;
+    padding: 14px 24px;
+  }
+}
+
+@media only screen and (max-width: 1170px) {
+  .about-us-img {
+    max-width: 700px !important;
+  }
+
+  .about-us-text {
+    margin-top: 0px;
+  }
+
+  .narrow .about-us-title {
+    font-size: 45px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .about-us-content-container {
+    margin-left: 0px;
+  }
+
+  .about-us-text-container {
+    padding-left: 60px !important;
+    max-width: 100%;
+  }
+
+  .narrow .about-us-text-container {
+    padding-left: 0px !important;
+  }
+
+  .about-us-title {
+    max-width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 60px;
+
+    font-size: 50px;
+  }
+
+  .about-us-text {
+    font-size: 18px;
+    line-height: 40px;
+  }
+
+  #img-container {
+    display: none;
+  }
+}

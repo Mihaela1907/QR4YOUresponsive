@@ -1,0 +1,83 @@
+/* Sidebar styles */
+#sidebar-toggle-button {
+  cursor: pointer;
+  transition: ease-in 0.1s;
+}
+
+#sidebar-toggle-button:hover {
+  transform: scale(1.1);
+}
+
+#sidebar {
+  margin-top: -112px;
+  margin-bottom: -60px;
+  margin-left: -32px;
+  padding: 259px 87px;
+  padding-bottom: 0px;
+  width: 100%;
+  max-width: 597px;
+  min-height: calc(100vh + 112px);
+  background-color: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(21px);
+  -webkit-backdrop-filter: blur(21px);
+  transition: 0.5s;
+  opacity: 1;
+}
+
+#sidebar.hidden {
+  width: 0px;
+  opacity: 0;
+  padding: 0px;
+}
+
+#sidebar ul {
+  padding-left: 0px;
+}
+
+#sidebar.hidden ul {
+  position: relative;
+  opacity: 0;
+  display: none;
+}
+
+#sidebar ul li {
+  margin-bottom: 50px;
+  list-style-type: none;
+  font: normal normal medium;
+  font-family: "Raleway";
+  font-size: 45px;
+  line-height: 70px;
+  letter-spacing: 4.5px;
+}
+
+#sidebar a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.toggle-sub-navigation-button {
+  cursor: pointer;
+}
+
+#sidebar .sub-navigation {
+  transition: 0.5s;
+}
+
+#sidebar .sub-navigation.hidden {
+  opacity: 0;
+}
+
+#sidebar .sub-navigation li {
+  margin-bottom: 36px;
+  padding-left: 75px;
+  font-family: "Raleway";
+  font-size: 35px;
+  line-height: 41px;
+  letter-spacing: 2.45px;
+}
+
+@media only screen and (max-width: 1024px) {
+  #sidebar-toggle-button {
+    height: 40px;
+  }
+}
